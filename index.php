@@ -22,7 +22,7 @@ $data = array(
         )
     ),
     "from" => array(
-        "email" => "hello@mycode.com"
+        "email" => "raziel@rzdev.codes"
     ),
     "subject" => $subject,
     "content" => array(

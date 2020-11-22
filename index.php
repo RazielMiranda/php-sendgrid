@@ -1,10 +1,9 @@
 <?php
 
-$email = "raziel@rzdev.codes";
+$email = "razielx3@live.com";
 $name = "RZ";
-$body = "<h1>hello</h1>";
-$time = new DateTime("Y");
-$subject = "tentando com o raziel@rzdev.codes será que foi denovo? $time";
+$body = "<h1>hello trying again</h1>";
+$subject = "tentando com o raziel@rzdev.codes será que foi denovo?";
 $headers = array(
     "Authorization: Bearer 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",
     'Content-Type: application/json'

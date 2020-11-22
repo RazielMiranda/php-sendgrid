@@ -1,12 +1,12 @@
 <?php
 
-$email = "razielx3@live.com";
+$email = "raziel@rzdev.codes";
 $name = "RZ";
 $body = "<h1>hello</h1>";
-$subject = "hello";
-$key = "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";
+$time = new DateTime("Y");
+$subject = "tentando com o raziel@rzdev.codes será que foi denovo? $time";
 $headers = array(
-    "Authorization: Bearer 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",
+    "Authorization: Bearer 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",
     'Content-Type: application/json'
 );
 
@@ -43,7 +43,9 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($ch);
 curl_close($ch);
 
-echo $response;
+if($response){
+    echo "ok";
+}
 // curl --request POST \
 //   --url https://api.sendgrid.com/v3/mail/send \
 //   --header "Authorization: Bearer $SENDGRID_API_KEY" \

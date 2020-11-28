@@ -3,9 +3,9 @@
 $email = "razielx3@live.com";
 $name = "RZ";
 $body = "<h1>hello trying again</h1>";
-$subject = "tentando com o raziel@rzdev.codes será que foi denovo?";
+$subject = "Novos testes!";
 $headers = array(
-    "Authorization: Bearer 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",
+    "Authorization: Bearer ",
     'Content-Type: application/json'
 );
 
@@ -14,14 +14,14 @@ $data = array(
         array(
             "to" => array(
                 array(
-                    "email" => $email,
+                    "email" => "raziel@rzdev.codes",
                     "name" => $name
                 )
             )
         )
     ),
     "from" => array(
-        "email" => "raziel@rzdev.codes"
+        "email" => $email,
     ),
     "subject" => $subject,
     "content" => array(
@@ -42,7 +42,8 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($ch);
 curl_close($ch);
 
-if($response){
+var_dump($response);
+if($response == true){
     echo "ok";
 }
 // curl --request POST \
